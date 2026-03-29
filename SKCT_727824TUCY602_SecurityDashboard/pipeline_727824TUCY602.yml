@@ -1,0 +1,33 @@
+project_name: "727824TUCY602_SecurityDashboard"
+student_name: "Prithiveraj E"
+roll_number:  "727824TUCY602"
+description:  "SIEM Lite - Security Dashboard for log-based threat detection"
+date:         "2026-03-28"
+
+stages:
+  - name:        "Stage 1 - Setup Lab"
+    script:      "code/setup_lab.py"
+    description: "Creates directories, checks dependencies, generates sample logs"
+    command:     "python code/setup_lab.py"
+
+  - name:        "Stage 2 - Run SIEM Tool"
+    script:      "code/run_tool.py"
+    description: "Runs SIEM analysis on all 3 test-case log files"
+    command:     "python code/run_tool.py"
+
+  - name:        "Stage 3 - Analyze Results"
+    script:      "code/analyze_results.py"
+    description: "Reads outputs, prints summary table, saves analysis report"
+    command:     "python code/analyze_results.py"
+
+environment:
+  os:       "Kali Linux"
+  python:   "3.10+"
+  vm_setup: "VirtualBox with Metasploitable2"
+
+outputs:
+  - "outputs/TC1_BruteForce_result.json"
+  - "outputs/TC2_PortScan_result.json"
+  - "outputs/TC3_Clean_result.json"
+  - "outputs/all_results.json"
+  - "outputs/analysis_report.txt"

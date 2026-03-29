@@ -1,0 +1,6 @@
+pandas==2.2.2
+matplotlib==3.9.0
+colorama==0.4.6
+rich==13.7.1
+jupyter==1.0.0
+notebook==7.2.1

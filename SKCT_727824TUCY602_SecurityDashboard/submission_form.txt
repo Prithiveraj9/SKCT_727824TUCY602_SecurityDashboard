@@ -1,0 +1,8 @@
+Name            : Prithiveraj E
+Roll Number     : 727824TUCY602
+Project Name    : Security Dashboard (SIEM Lite)
+Project Category: Security Monitoring / Log Analysis
+GitHub URL      : https://github.com/[your-username]/hacker-skct-727824TUCY602
+Total Commits   : [fill after pushing — minimum 7 across 3 days]
+Tools Used      : Python, pandas, matplotlib, rich, colorama, Kali Linux, VirtualBox, Metasploitable2
+Tool Summary    : A lightweight SIEM dashboard that parses syslog-format log files, detects brute-force SSH attacks and port-scan reconnaissance using rule-based analysis, classifies threats by severity (CRITICAL/HIGH/MEDIUM/LOW), and outputs structured JSON/CSV alert reports with a plain-text analysis summary.
